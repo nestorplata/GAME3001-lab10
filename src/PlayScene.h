@@ -48,7 +48,15 @@ private:
 	bool m_bDebugKeys[NUM_OF_DEBUG_KEYS];
 
 	std::vector<PathNode*> m_pGrid;
-	
+
+
+	std::vector<PathNode*> m_pPatrolPath;
+	void m_buildClockwisePatrolPath();
+	void m_displayPatrolPath();
+	int m_targetPathNodeIndex;
+	PathNode* m_pTargetPathNode;
+	void m_movePlaneToTargetNode();
+
 };
 
 #endif /* defined (__PLAY_SCENE__) */

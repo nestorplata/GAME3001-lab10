@@ -15,8 +15,11 @@ public:
 	virtual void update() override;
 	virtual void clean() override;
 
+	void setAngle(float angle);
 private:
 	void m_buildAnimations();
+
+	float m_angle;
 };
 
 #endif /* defined (__PLANE__) */
